@@ -9,9 +9,9 @@ seek('Book_list.txt')
 
 print ('Book_list.txt')
 
-    open('Book_list.txt')
+open('Book_list.txt')
 
-    print(f.(all(Book_list.txt)))
+print(f.(all(Book_list.txt)))
 
     close('Book_list.txt')
 print(""" ======LIBRARY MENU=======
@@ -89,7 +89,3 @@ class Student:
             library.addabook(student.addBook())
         elif choice == 3:
             library.removeabook(student.removeBook())
-
-
-
-
