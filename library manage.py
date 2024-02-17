@@ -1,33 +1,64 @@
-class Library :
+from dbm.ndbm import library
+
+
+class Library:
 
     def __init__(self, listofbooks):
+        self.avaiblebooks = listofbooks
 
-          self.avaiblebooks = listofbooks
+    def listofallavaiblebooks(self):
+        pass
 
-seek('Book_list.txt')
+    def addabook(self, param):
+        pass
+
+    def removeabook(self, param):
+        pass
 
 
-print ('Book_list.txt')
+print('Book_list.txt')
 
 open('Book_list.txt')
 
-print (f,(all(Book_list.txt)))
+
+class Book_list:
+    txt = None
+
+
+print((all(Book_list.txt)))
+
+
+def close(Book_list):
+    pass
 
 
 close('Book_list.txt')
+
 print(""" ======LIBRARY MENU=======
+
                 1. List of all available books
                 2. Add a book
                 3. Remove a book
                 """)
 choice = int(input("Enter Choice:"))
+
+
+class Student:
+    @classmethod
+    def addBook(cls):
+        pass
+
+    @classmethod
+    def removeBook(cls):
+        pass
+
+
 if choice == 1:
     library.listofallavaiblebooks()
 elif choice == 2:
-    library.addabook(student.addBook())
+    library.addabook(Student.addBook())
 elif choice == 3:
-    library.removeabook(student.removeBook())
-
+    library.removeabook(Student.removeBook())
 
 
 def displayAvailablebooks(self):
@@ -35,7 +66,7 @@ def displayAvailablebooks(self):
 
     print("================================")
     for book in self.avaiblelebooks:
-     print(book)
+        print(book)
 
 
 def lendbook(self, requestedBook):
@@ -55,33 +86,23 @@ class Student:
     book: (str)
 
     def __init__(self):
+        # noinspection PyTypeChecker
         self.book = None
-
 
     def requestBook(self):
         print("Enter the name of the book you'd like to borrow")
         self.book = input()
         return self.book
 
-
     def returnBook(self):
-
         print("Enter the name of the book you'd like to return")
 
+    returnBook.book = input()
 
-    self.book = input()
-
-
-
-
-    "return" (self.book)
+    "return"
 
 
-
-
-  def main():
-
-
+def main():
     library = Library(["Nutuk,Mustafa Kemal Atatürk,,", "Faust,Goethe", "Kiralık Konak,Yakup Kadri Karaosmanoğlu"])
     student = Student()
     done = False
@@ -98,7 +119,3 @@ class Student:
             library.addabook(student.addBook())
         elif choice == 3:
             library.removeabook(student.removeBook())
-
-
-
-
